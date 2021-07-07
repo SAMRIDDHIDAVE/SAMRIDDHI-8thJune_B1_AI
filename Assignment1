@@ -1,0 +1,67 @@
+# question 2
+print(5 ** 9)
+print(3 // 2)
+print(7 // 3)
+print(7 / 3)
+print(6 == 6)
+a = 20
+a += 30
+a %= 3
+print(a)
+print(True * False)
+print(True & False)
+print(True and False)
+print((6 > 3) and (7 < 4) or (18 == 3)) and (9 > 3)
+print(True is False)
+print((True == False) or (False > True)) and (False <= True)
+
+#  question 3
+s1 = "Nice to have it "
+s2 = "here"
+print(s1 + s2)
+
+# question 4
+a = [1, 2, [3, 4], [5, [100, 200, ['hello']], 23, 11], 1, 7]
+print(a[3][1][2][0])
+
+# question 5
+a.insert(0, s1)
+a.append(s2)
+print(a)
+
+# question 6
+color_list_1 = set(["White", "Black", "Red"])
+color_list_2 = set(["Red", "Green"])
+print(color_list_1 - color_list_2)
+
+# question 7
+a = set(input())
+s = set('abcdefghijklmnopqrstuvwxyz')
+if s == a:
+    print("String is pangram")
+else:
+    print("Sorry")
+
+# question 8
+a = input("Input an integer : ")
+n1 = int("%s" % a)
+n2 = int("%s%s" % (a, a))
+n3 = int("%s%s%s" % (a, a, a))
+print(n1 + n2 + n3)
+
+# question 9
+y = input("Enter comma separated sequence of words : ")
+y = sorted(y.split(","))
+print(",".join(y))
+
+# question 10
+marks = {'Rahul': 57, 'Kichore': 87, 'Vidya': 67, 'Rakhi': 79}
+highest = max(marks.values())
+n = [k for k, v in marks.items() if v == highest]
+
+if len(n) == 1:
+    print(n[0], ' got the highest mark')
+elif len(n) == 2:
+    print(n[0], 'and', n[1], ' got the highest mark')
+elif len(n) == 3:
+    print(n[0], ',', n[1], 'and', n[2], ' got the highest mark')
